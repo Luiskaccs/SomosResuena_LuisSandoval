@@ -1,0 +1,546 @@
+/* --------------------------------- Header---------------------------------*/
+header {
+  display: grid;
+  background-image: url("Banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  width: 100vw;
+  background-position: center;
+  grid-template-areas: "Logo Menu" "Presentacion VideoReel" "Boton1Header VideoReel";
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 33.3% 33.3% 33.3%;
+  font-family: 'Aleo', sans-serif;
+  color: #fff; }
+
+.Presetacion {
+  grid-area: Presentacion;
+  color: #fff;
+  width: 80%;
+  /*  height: auto; */
+  justify-self: center;
+  align-self: center; }
+  .Presetacion p {
+    font-size: 1.3rem; }
+
+.Titulo {
+  padding-bottom: 1rem; }
+
+.Logo {
+  grid-area: Logo;
+  height: auto;
+  width: 50%;
+  justify-self: center;
+  align-self: center; }
+
+.YTB2 {
+  grid-area: VideoReel;
+  grid-area: VideoReel;
+  justify-self: center;
+  align-self: center;
+  height: 88%;
+  width: 90%;
+  animation: pulsate 1.5s infinite alternate;
+  box-shadow: 0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 2rem #cd684f, 0 0 0.8rem #cd684f, 0 0 2.8rem #cd684f, inset 0 0 1.3rem #cd684f; }
+
+@keyframes pulsate {
+  100% {
+    box-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #cd684f, 0 0 80px #cd684f, 0 0 90px #cd684f, 0 0 100px #cd684f, 0 0 120px #cd684f; }
+  0% {
+    box-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #fff, 0 0 10px #cd684f, 0 0 45px #cd684f, 0 0 55px #cd684f, 0 0 70px #cd684f, 0 0 80px #cd684f; } }
+
+.TrabajosButton {
+  grid-area: Boton1Header;
+  background-color: #d66a53;
+  border: none;
+  height: 20%;
+  width: 60%;
+  align-self: center;
+  justify-self: center;
+  border-radius: 20px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  transition: all 1s;
+  /* font-size: $TrabajosButtonOperationSize; */
+  font-family: 'Aleo', sans-serif;
+  text-decoration: none; }
+  .TrabajosButton a {
+    text-decoration: none;
+    color: white; }
+  .TrabajosButton:hover {
+    background-color: #4CAF50;
+    height: 40%;
+    width: 80%;
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: #fff; }
+
+/* --------------------------------- Menu Principal---------------------------------*/
+.Menu {
+  grid-area: Menu;
+  display: block;
+  height: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center; }
+  .Menu ul {
+    list-style: none; }
+  .Menu a {
+    color: whitesmoke; }
+  .Menu ul a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 10px;
+    font-family: 'Aleo', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    /* flex-direction: row;
+        justify-content: space-between; */ }
+  .Menu ul li {
+    position: relative;
+    float: left; }
+  .Menu li {
+    width: 150px;
+    height: 50px;
+    transition: background-position-x 0.6s linear;
+    text-align: center; }
+    .Menu li a {
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: all 0.45s; }
+  .Menu :hover {
+    color: #d66a53; }
+  .Menu li:hover {
+    background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB2ZXJzaW9uPSIxLjEi%0D%0AIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhs%0D%0AaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB3aWR0%0D%0AaD0iMzkwcHgiIGhlaWdodD0iNTBweCIgdmlld0JveD0iMCAwIDM5MCA1MCIgZW5hYmxlLWJhY2tn%0D%0Acm91bmQ9Im5ldyAwIDAgMzkwIDUwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHBhdGggZmlsbD0i%0D%0Abm9uZSIgc3Ryb2tlPSIjZDk0ZjVjIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLW1pdGVybGlt%0D%0AaXQ9IjEwIiBkPSJNMCw0Ny41ODVjMCwwLDk3LjUsMCwxMzAsMAoJYzEzLjc1LDAsMjguNzQtMzgu%0D%0ANzc4LDQ2LjE2OC0xOS40MTZDMTkyLjY2OSw0Ni41LDI0My42MDMsNDcuNTg1LDI2MCw0Ny41ODVj%0D%0AMzEuODIxLDAsMTMwLDAsMTMwLDAiLz4KPC9zdmc+Cg==");
+    -webkit-animation: line 1s;
+    animation: line 1s; }
+  .Menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0; }
+    .Menu ul ul li {
+      float: none;
+      width: 150px;
+      padding: 0.5rem; }
+    .Menu ul ul a {
+      line-height: 120%;
+      /* padding:10px 15px; */ }
+  .Menu ul li:hover > ul {
+    display: block;
+    background-color: black; }
+
+@-webkit-keyframes line {
+  0% {
+    background-position-x: 390px; } }
+
+@keyframes line {
+  0% {
+    background-position-x: 390px; } }
+
+/* ---------------------------------Index---------------------------------*/
+.Carrusel {
+  display: grid;
+  text-align: center;
+  font-family: 'Aleo', sans-serif;
+  color: whitesmoke;
+  background: #242745;
+  background: radial-gradient(circle, #242745 18%, #cd684f 100%);
+  width: 100vw;
+  height: 26rem;
+  grid-template-areas: "Titulo" "Carrusel1";
+  grid-template-columns: 100%;
+  grid-template-rows: 30% 70%; }
+  .Carrusel .Titulo {
+    grid-area: Titulo;
+    justify-self: center;
+    align-self: center;
+    width: 100vw;
+    padding-top: 1rem; }
+  .Carrusel #Carrusel1 {
+    grid-area: Carrusel1;
+    justify-self: center;
+    align-self: center;
+    width: 100vw;
+    height: auto; }
+
+.fotosComents {
+  grid-area: fotosComents;
+  justify-self: center;
+  align-self: center;
+  width: 10%;
+  height: 30%;
+  border-radius: 50%; }
+
+.Descrip1 {
+  grid-area: Descrip1;
+  justify-self: center;
+  align-self: center;
+  padding-top: 1rem; }
+
+.Comentarios p {
+  padding-top: 1rem; }
+
+/* --------------------------------- Logos, Fotos e insertos ---------------------------------*/
+.discordFixed a {
+  display: flex;
+  position: fixed;
+  bottom: 1.8%;
+  left: calc(100vw - 185px);
+  border-radius: 5%;
+  background-color: #7289da;
+  /*     justify-content: space-evenly;
+       */
+  font-family: 'Aleo', sans-serif;
+  padding: 0.5rem;
+  width: 10rem;
+  height: 3.4rem;
+  text-decoration: none;
+  font-size: 0.8rem; }
+
+.discordFixed img {
+  display: block;
+  width: 2.5rem;
+  height: 2.5rem; }
+
+.discordFixed p {
+  display: block;
+  text-align: left;
+  padding-left: 0.3rem;
+  color: white; }
+
+.fotoTeam img {
+  display: block;
+  height: 10rem;
+  margin-left: auto;
+  border-radius: 50%;
+  width: 100%; }
+
+/* --------------------------------- Footer ---------------------------------*/
+.preFooter {
+  background-color: black;
+  display: grid;
+  color: whitesmoke;
+  background-color: black;
+  width: 100vw;
+  height: 18rem;
+  grid-template-areas: "logoFooter FLista1 FLista2" "Redeslogos Redeslogos Redeslogos";
+  grid-template-columns: 40% 30% 30%;
+  grid-template-rows: 80% 10%;
+  align-items: center; }
+  .preFooter .logoFooter {
+    grid-area: logoFooter;
+    height: auto;
+    width: 50%;
+    justify-self: center; }
+  .preFooter .FooterLista1 {
+    grid-area: FLista1;
+    height: auto;
+    width: 60%;
+    justify-self: left; }
+    .preFooter .FooterLista1 li {
+      background-color: black;
+      color: white;
+      font-family: 'Aleo', sans-serif; }
+  .preFooter .FooterLista2 {
+    grid-area: FLista2;
+    height: auto;
+    width: 60%;
+    justify-self: left; }
+    .preFooter .FooterLista2 li {
+      background-color: black;
+      color: white;
+      font-family: 'Aleo', sans-serif; }
+  .preFooter .Redeslogos {
+    grid-area: Redeslogos;
+    justify-self: center;
+    align-self: center;
+    display: flexbox;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem; }
+    .preFooter .Redeslogos a {
+      display: inline-block;
+      padding: 0.5em;
+      background-color: #d66a53;
+      border-radius: 60%; }
+      .preFooter .Redeslogos a svg {
+        color: white;
+        width: 40px;
+        height: 40px; }
+
+.End {
+  text-align: center;
+  color: whitesmoke;
+  background-color: black;
+  font-family: 'Aleo', sans-serif;
+  width: 100vw;
+  height: 2em; }
+
+.TrabajosButton {
+  font-size: 1.4rem; }
+
+/* ---------------------------------About Us---------------------------------*/
+.headerGeneral {
+  display: grid;
+  background: #cd684f;
+  background: linear-gradient(349deg, #cd684f 6%, #242745 100%);
+  height: 9rem;
+  width: 100vw;
+  grid-template-areas: "Logo Menu";
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 100%;
+  font-family: 'Aleo', sans-serif;
+  color: #fff; }
+  .headerGeneral .Logo {
+    align-self: center;
+    width: 50%; }
+  .headerGeneral .Menu {
+    align-self: center; }
+
+.Historia {
+  display: grid;
+  background: #242745;
+  background: linear-gradient(6deg, #242745 0%, #cd684f 100%);
+  text-align: justify;
+  font-family: 'Aleo', sans-serif;
+  height: 30rem;
+  width: 100vw;
+  grid-template-areas: "Titulo Titulo" "Texto1 Foto1";
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 20% 70%;
+  gap: 1rem; }
+  .Historia .Titulo {
+    grid-area: Titulo; }
+
+.Texto1 {
+  grid-area: Texto1;
+  justify-self: center;
+  align-self: center;
+  color: white;
+  height: 20rem;
+  width: 25rem;
+  font-size: 0.9rem; }
+
+.Historia .Foto1 {
+  grid-area: Foto1;
+  justify-self: center;
+  align-self: center;
+  width: 70%;
+  height: auto;
+  border-radius: 50px; }
+
+.Equipo {
+  display: grid;
+  background: #242745;
+  background: linear-gradient(166deg, #242745 0%, #cd684f 100%);
+  width: 100vw;
+  height: 100rem;
+  grid-template-areas: "Titulo" "Tarjetas";
+  grid-template-columns: 100%;
+  grid-template-rows: 20% 90%;
+  justify-self: center;
+  align-self: center; }
+  .Equipo .Titulo {
+    grid-area: Titulo;
+    justify-self: center;
+    align-self: center; }
+  .Equipo .Tarjetas {
+    grid-area: Tarjetas;
+    display: flexbox;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Aleo', sans-serif;
+    justify-self: center;
+    align-self: center;
+    width: 100vw;
+    height: auto; }
+
+.Tarjetas h3 {
+  text-align: center; }
+
+.Tarjetas h2 {
+  text-align: center;
+  padding-top: 1rem; }
+
+.Tarjetas article {
+  display: inline-block;
+  background: #242745;
+  background: linear-gradient(166deg, #242745 0%, #cd684f 100%);
+  width: 15rem;
+  height: 30rem;
+  border-style: solid;
+  border-width: 0.2rem;
+  text-align: justify;
+  color: white;
+  border-color: #242745;
+  padding: 1rem; }
+
+.Tarjetas p {
+  width: 100%;
+  height: 20rem;
+  font-size: 10px; }
+
+/* --------------------------------- Contacto ---------------------------------*/
+.formularioContacto {
+  display: grid;
+  background: #ff9175;
+  background: linear-gradient(202deg, #ff9175 0%, #242745 100%);
+  width: 100vw;
+  height: 60rem;
+  grid-template-areas: "Titulo" "Formulario";
+  grid-template-columns: 100%;
+  grid-template-rows: 20% 80%; }
+  .formularioContacto .Titulo {
+    grid-area: Titulo;
+    justify-self: center;
+    align-self: center; }
+
+.formulario {
+  grid-area: Formulario;
+  justify-self: center;
+  align-self: center;
+  width: auto;
+  height: auto;
+  border: solid #242745;
+  padding: 1rem;
+  color: whitesmoke;
+  font-family: 'Aleo', sans-serif; }
+
+/* --------------------------------- JOBS---------------------------------*/
+.Jobs {
+  display: grid;
+  background: #ff9175;
+  background: linear-gradient(16deg, #ff9175 0%, #242745 100%);
+  height: 70rem;
+  width: 100vw;
+  height: 80rem;
+  grid-template-areas: "Titulo" "SPOTY2" "SCLD";
+  grid-template-columns: 100%;
+  grid-template-rows: 10% 45% 45%; }
+  .Jobs .Titulo {
+    grid-area: Titulo;
+    justify-self: center;
+    align-self: center; }
+
+.SPTY2 {
+  grid-area: SPOTY2;
+  justify-self: center;
+  align-self: center;
+  width: 90%;
+  animation: pulsate 1.5s infinite alternate;
+  box-shadow: 0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 2rem #cd684f, 0 0 0.8rem #cd684f, 0 0 2.8rem #cd684f, inset 0 0 1.3rem #cd684f; }
+
+.SDCLD {
+  grid-area: SCLD;
+  justify-self: center;
+  align-self: center;
+  width: 90%;
+  animation: pulsate 1.5s infinite alternate;
+  box-shadow: 0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 2rem #cd684f, 0 0 0.8rem #cd684f, 0 0 2.8rem #cd684f, inset 0 0 1.3rem #cd684f; }
+
+/* --------------------------------- Titulos---------------------------------*/
+.Titulo h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Aleo', sans-serif;
+  padding: 1rem;
+  font-size: 3rem;
+  color: white;
+  width: auto;
+  height: auto; }
+
+.Titulo2 h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Aleo', sans-serif;
+  padding: 1rem;
+  font-size: 3rem;
+  color: whitesmoke; }
+
+/* --------------------------------- PODCAST YTB SPOTIFY---------------------------------*/
+.Reproductores {
+  display: grid;
+  background: #ff9175;
+  background: radial-gradient(circle, #ff9175 0%, #242745 71%);
+  background-color: #d66a53;
+  height: 70rem;
+  width: 100vw;
+  grid-template-areas: "Titulo Titulo" "SPOTY Foto2 " "Foto3 YTB";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 10% 40% 40%; }
+  .Reproductores .Titulo {
+    grid-area: Titulo;
+    justify-self: center;
+    align-self: center; }
+
+.SPTY {
+  grid-area: SPOTY;
+  justify-self: center;
+  align-self: center;
+  width: 90%;
+  animation: pulsate 1.5s infinite alternate;
+  box-shadow: 0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 2rem #cd684f, 0 0 0.8rem #cd684f, 0 0 2.8rem #cd684f, inset 0 0 1.3rem #cd684f; }
+
+.Reproductores .Foto2 {
+  grid-area: Foto2;
+  justify-self: center;
+  align-self: center;
+  width: 70%;
+  height: auto;
+  border-radius: 50px; }
+
+.Reproductores .Foto3 {
+  grid-area: Foto3;
+  justify-self: center;
+  align-self: center;
+  width: 60%;
+  height: auto;
+  border-radius: 50px; }
+
+.YTB {
+  grid-area: YTB;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  justify-self: center;
+  align-self: center;
+  animation: pulsate 1.5s infinite alternate;
+  box-shadow: 0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 2rem #cd684f, 0 0 0.8rem #cd684f, 0 0 2.8rem #cd684f, inset 0 0 1.3rem #cd684f; }
+
+/* --------------------------------- Servicios ---------------------------------*/
+.listaPrecios {
+  display: grid;
+  background: #242745;
+  background: linear-gradient(58deg, #242745 0%, #cd684f 100%);
+  font-family: 'Aleo', sans-serif;
+  /*     padding: 1rem;
+     */
+  height: 50rem;
+  width: 100vw;
+  grid-template-areas: "Titulo" "Tabla1";
+  grid-template-columns: 100%;
+  grid-template-rows: 10% 90%; }
+  .listaPrecios .Titulo {
+    grid-area: Titulo;
+    justify-self: center;
+    align-self: center; }
+  .listaPrecios table {
+    grid-area: Tabla1;
+    background-color: #d66a53;
+    font-family: 'Aleo', sans-serif;
+    padding: 1rem;
+    height: 30rem;
+    width: auto;
+    justify-self: center;
+    align-self: center;
+    color: white;
+    border-color: #242745; }
+  .listaPrecios td {
+    padding-left: 1rem;
+    padding-right: 1rem; }
+  .listaPrecios ol {
+    list-style-position: inside;
+    list-style-type: square; }

@@ -1,0 +1,30 @@
+/* --------------------------------- Contacto ---------------------------------*/
+
+.formularioContacto {
+    display: grid;
+    background: rgb(255, 145, 117);
+    background: linear-gradient(202deg, rgba(255, 145, 117, 1) 0%, rgba(36, 39, 69, 1) 100%);
+    width: 100vw;
+    height: 60rem;
+    grid-template-areas: "Titulo" "Formulario";
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 80%;
+  
+    .Titulo {
+      grid-area: Titulo;
+      justify-self: center;
+      align-self: center;
+    }
+  }
+  
+  .formulario {
+    grid-area: Formulario;
+    justify-self: center;
+    align-self: center;
+    width: auto;
+    height: auto;
+    border: solid rgb(36, 39, 69);
+    padding: 1rem;
+    color: whitesmoke;
+    font-family: 'Aleo', sans-serif;
+  }

@@ -1,0 +1,59 @@
+/* --------------------------------- PODCAST YTB SPOTIFY---------------------------------*/
+
+.Reproductores {
+    display: grid;
+    background: rgb(255, 145, 117);
+    background: radial-gradient(circle, rgba(255, 145, 117, 1) 0%, rgba(36, 39, 69, 1) 71%);
+    background-color: rgb(214, 106, 83);
+    height: 70rem;
+    width: 100vw;
+    grid-template-areas: "Titulo Titulo" "SPOTY Foto2 " "Foto3 YTB";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 40% 40%;
+  
+    .Titulo {
+      grid-area: Titulo;
+      justify-self: center;
+      align-self: center;
+    }
+  }
+  
+  .SPTY {
+    grid-area: SPOTY;
+    justify-self: center;
+    align-self: center;
+    width: 90%;
+    animation: pulsate 1.5s infinite alternate;
+    box-shadow: 0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 2rem #cd684f, 0 0 0.8rem #cd684f, 0 0 2.8rem #cd684f, inset 0 0 1.3rem #cd684f;
+  }
+  
+  .Reproductores {
+    .Foto2 {
+      grid-area: Foto2;
+      justify-self: center;
+      align-self: center;
+      width: 70%;
+      height: auto;
+      border-radius: 50px;
+    }
+  
+    .Foto3 {
+      grid-area: Foto3;
+      justify-self: center;
+      align-self: center;
+      width: 60%;
+      height: auto;
+      border-radius: 50px;
+    }
+  }
+  
+  .YTB {
+    grid-area: YTB;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    justify-self: center;
+    align-self: center;
+    animation: pulsate 1.5s infinite alternate;
+    box-shadow: 0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 2rem #cd684f, 0 0 0.8rem #cd684f, 0 0 2.8rem #cd684f, inset 0 0 1.3rem #cd684f;
+  }

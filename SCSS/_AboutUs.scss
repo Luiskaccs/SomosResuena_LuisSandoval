@@ -1,0 +1,122 @@
+/* ---------------------------------About Us---------------------------------*/
+
+.headerGeneral {
+    display: grid;
+    background: rgb(205, 104, 79);
+    background: linear-gradient(349deg, rgba(205, 104, 79, 1) 6%, rgba(36, 39, 69, 1) 100%);
+    height: 9rem;
+    width: 100vw;
+    grid-template-areas: "Logo Menu";
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 100%;
+    font-family: 'Aleo', sans-serif;
+    color: #fff;
+  
+    .Logo {
+      align-self: center;
+      width: 50%;
+    }
+  
+    .Menu {
+      align-self: center;
+    }
+  }
+  
+  .Historia {
+    display: grid;
+    background: rgb(36, 39, 69);
+    background: linear-gradient(6deg, rgba(36, 39, 69, 1) 0%, rgba(205, 104, 79, 1) 100%);
+    text-align: justify;
+    font-family: 'Aleo', sans-serif;
+    height: 30rem;
+    width: 100vw;
+    grid-template-areas: "Titulo Titulo" "Texto1 Foto1";
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 20% 70%;
+    gap: 1rem;
+  
+    .Titulo {
+      grid-area: Titulo;
+    }
+  }
+  
+  .Texto1 {
+    grid-area: Texto1;
+    justify-self: center;
+    align-self: center;
+    color: white;
+    height: 20rem;
+    width: 25rem;
+    font-size: 0.9rem;
+  }
+  
+  .Historia .Foto1 {
+    grid-area: Foto1;
+    justify-self: center;
+    align-self: center;
+    width: 70%;
+    height: auto;
+    border-radius: 50px;
+  }
+  
+  .Equipo {
+    display: grid;
+    background: rgb(36, 39, 69);
+    background: linear-gradient(166deg, rgba(36, 39, 69, 1) 0%, rgba(205, 104, 79, 1) 100%);
+    width: 100vw;
+    height: 100rem;
+    grid-template-areas: "Titulo" "Tarjetas";
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 90%;
+    justify-self: center;
+    align-self: center;
+  
+    .Titulo {
+      grid-area: Titulo;
+      justify-self: center;
+      align-self: center;
+    }
+  
+    .Tarjetas {
+      grid-area: Tarjetas;
+      display: flexbox;
+      flex-direction: row;
+      align-items: center;
+      font-family: 'Aleo', sans-serif;
+      justify-self: center;
+      align-self: center;
+      width: 100vw;
+      height: auto;
+    }
+  }
+  
+  .Tarjetas {
+    h3 {
+      text-align: center;
+    }
+  
+    h2 {
+      text-align: center;
+      padding-top: 1rem;
+    }
+  
+    article {
+      display: inline-block;
+      background: rgb(36, 39, 69);
+      background: linear-gradient(166deg, rgba(36, 39, 69, 1) 0%, rgba(205, 104, 79, 1) 100%);
+      width: 15rem;
+      height: 30rem;
+      border-style: solid;
+      border-width: 0.2rem;
+      text-align: justify;
+      color: white;
+      border-color: rgb(36, 39, 69);
+      padding: 1rem;
+    }
+  
+    p {
+      width: 100%;
+      height: 20rem;
+      font-size: 10px;
+    }
+  }

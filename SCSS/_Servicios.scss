@@ -1,0 +1,47 @@
+
+/* --------------------------------- Servicios ---------------------------------*/
+
+.listaPrecios {
+    display: grid;
+    background: rgb(36, 39, 69);
+    background: linear-gradient(58deg, rgba(36, 39, 69, 1) 0%, rgba(205, 104, 79, 1) 100%);
+    font-family: 'Aleo', sans-serif;
+  
+    /*     padding: 1rem;
+     */
+  
+    height: 50rem;
+    width: 100vw;
+    grid-template-areas: "Titulo" "Tabla1";
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 90%;
+  
+    .Titulo {
+      grid-area: Titulo;
+      justify-self: center;
+      align-self: center;
+    }
+  
+    table {
+      grid-area: Tabla1;
+      background-color: rgb(214, 106, 83);
+      font-family: 'Aleo', sans-serif;
+      padding: 1rem;
+      height: 30rem;
+      width: auto;
+      justify-self: center;
+      align-self: center;
+      color: white;
+      border-color: rgb(36, 39, 69);
+    }
+  
+    td {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  
+    ol {
+      list-style-position: inside;
+      list-style-type: square;
+    }
+  }
