@@ -4,14 +4,36 @@ header {
   background-image: url("Banner.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 700px;
-  width: 100vw;
-  background-position: center;
-  grid-template-areas: "Logo Menu" "Presentacion VideoReel" "Boton1Header VideoReel";
-  grid-template-columns: 40% 60%;
-  grid-template-rows: 33.3% 33.3% 33.3%;
   font-family: 'Aleo', sans-serif;
   color: #fff; }
+  @media (min-width: 0px) and (max-width: 516px) {
+    header {
+      height: 1400px;
+      width: 100vw;
+      background-position: center;
+      grid-template-areas: "Logo" "Menu" "Presentacion"     "Boton1Header"  "VideoReel";
+      grid-template-columns: 100%;
+      grid-template-rows: 10% 20% 10% 20% 30%; }
+      header .YTB2 {
+        height: 60%;
+        width: 90%; } }
+  @media (min-width: 516px) and (max-width: 800px) {
+    header {
+      height: 1400px;
+      width: 100vw;
+      background-position: center;
+      grid-template-areas: "Logo" "Menu" "Presentacion"     "Boton1Header"  "VideoReel";
+      grid-template-columns: 100%;
+      grid-template-rows: 1% 30% 40% 10% 20%; } }
+  @media (min-width: 800px) and (max-width: 3000px) {
+    header {
+      border-radius: 0px;
+      height: 700px;
+      width: 100vw;
+      background-position: center;
+      grid-template-areas: "Logo Menu" "Presentacion VideoReel" "Boton1Header VideoReel";
+      grid-template-columns: 40% 60%;
+      grid-template-rows: 33.3% 33.3% 33.3%; } }
 
 .Presetacion {
   grid-area: Presentacion;
@@ -38,7 +60,7 @@ header {
   grid-area: VideoReel;
   justify-self: center;
   align-self: center;
-  height: 88%;
+  height: 90%;
   width: 90%;
   animation: pulsate 1.5s infinite alternate;
   box-shadow: 0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 2rem #cd684f, 0 0 0.8rem #cd684f, 0 0 2.8rem #cd684f, inset 0 0 1.3rem #cd684f; }
