@@ -299,4 +299,59 @@ header {
       background-position-x: 390px;
     }
   }
+
+      /* --------------------------------- Menu Generico---------------------------------*/
+
   
+  .headerGeneral {
+    display: grid;
+    background: rgb(205, 104, 79);
+    background: linear-gradient(349deg, rgba(205, 104, 79, 1) 6%, rgba(36, 39, 69, 1) 100%);
+    font-family: 'Aleo', sans-serif;
+    color: #fff;
+
+    @media (min-width: 0px) and (max-width:$sm)  {
+    height: 9rem;
+    width: 100vw;
+    grid-template-areas: 
+    "Logo"
+    "menuHambur";
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 40% ;
+
+    .Menu{
+      display: none;
+    }
+
+    }
+
+    @media (min-width: $sm) and (max-width:$md)  {
+      height: 15rem;
+      width: 100vw;
+      grid-template-areas: 
+      "Logo"
+      "Menu";
+      grid-template-columns: 100%;
+      grid-template-rows: 50% 40% ;
+  
+      .menuHambur{
+        display: none;
+      }
+  
+      }
+
+      @media (min-width: $md) and (max-width:$lg)  {
+        height: 10rem;
+        width: 100vw;
+        grid-template-areas: 
+        "Logo Menu";
+        grid-template-columns: 20% 80%;
+        grid-template-rows: 100% ;
+    
+        .menuHambur{
+          display: none;
+        }
+    
+        }  
+  
+  }

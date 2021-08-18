@@ -52,51 +52,101 @@
 
     <!--     ------------------------------- Header & Menu Principal------------------------------- -->   
 
-        
-        <header class="headerGeneral">
+    <header class="headerGeneral">
 
-            <a class="Logo" href="Index.html"><img src="IMG/logo2.svg"></a>
-        
-            <nav class=Menu>
-                <ul>
-                    <li>
-        
-                        <a href="Index.html"> Inicio </a>
-        
-                    </li>
-        
-        
-                    <li>
-        
-                        <a href="About_Us.html"> Quienes somos </a></li>
-        
-                    <li><a href="Servicios.html">Servicios</a>
-        
-                        <ul>
-                        
-                        <li><a href="Servicios.html">Edición de Podcast</a></li>
-                        <li><a href="Servicios.html">Grabación</a></li>
-                        <li><a href="Servicios.html">Mezcla</a></li>
-        
-                        </ul>
-                    </li>
-                
-                    <li>
-                        <a href="Podcast.html"> Podcast </a>
-                    </li>
-        
-
-        
-                    <li>
-                    <a href="Contact.html"> Contacto </a>
-                    </li>
-        
-                </ul>
-                </nav>
-        
-            </header>
-
+        <a class="Logo" href="Index.html"><img src="IMG/logo2.svg"></a>
     
+<!--------------------------------- Menu Small------------------------------- -->   
+
+
+    <nav class="menuHambur">
+        <nav class="navbar navbar-light bg-dark">
+            <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="about_us.html">Quienes Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="jobs.html">Trabajos</a>
+                        </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="servicios.html" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Servicios
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                        <li><a class="dropdown-item" href="servicios.html">Edición de Podcast</a></li>
+                        <li><a class="dropdown-item" href="servicios.html">Grabación</a></li>
+                        <li><a class="dropdown-item" href="servicios.html">Mezcla</a></li>
+                    </ul>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="podcast.html">Podcast</a>
+                    </li>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contacto </a>
+                </li>
+
+                </ul>
+                </div>
+            </div>
+        </div>
+        </nav>
+        
+    </nav>
+
+<!---------------------------------  Menu Principal------------------------------- --> 
+
+    <nav class=Menu>
+        <ul>
+            <li>
+
+                <a href="index.html"> Inicio </a>
+
+            </li>
+
+
+            <li>
+
+                <a href="about_us.html"> Quienes somos </a></li>
+
+            <li><a href="servicios.html">Servicios</a>
+
+                <ul>
+                
+                <li><a href="servicios.html">Edición de Podcast</a></li>
+                <li><a href="servicios.html">Grabación</a></li>
+                <li><a href="servicios.html">Mezcla</a></li>
+
+                </ul>
+            </li>
+        
+            <li>
+                <a href="podcast.html"> Podcast </a>
+            </li>
+
+            <li>
+            <a href="contact.html"> Contacto </a>
+            </li>
+
+        </ul>
+        </nav>
+    
+        </header>
 
                 
     <!--------------------------------- Formulario Seccion 1------------------------------- -->   
@@ -252,13 +302,11 @@
 
     </div>
 
-</footer>
-
-
-
-<footer class="End">
+    <div class="End">
             
-<h3>Web Diseñada por Luis Sandoval    www.somosresuena.com</h3>
+        <h3>Web Diseñada por Luis Sandoval    www.somosresuena.com</h3>
+        
+        </div>
 
 </footer>
 
