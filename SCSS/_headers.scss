@@ -1,0 +1,357 @@
+
+/* --------------------------------- Header---------------------------------*/
+$sm: 516px;
+$md: 800px;
+$lg: 4000px;
+
+header {
+    display: grid;
+    background-image: url("Banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Aleo', sans-serif;
+    color: #fff;
+
+    @media (min-width: 0px) and (max-width:$sm)  {
+      height: 70rem;
+      width: 100vw;
+      background-position: center;
+      grid-template-areas: 
+      "Logo"
+      "menuHambur"
+      "Presentacion"    
+      "Boton1Header" 
+      "VideoReel";
+      grid-template-columns: 100%;
+      grid-template-rows: 10% 5% 40% 15% 30%;
+
+      .YTB2 {
+        height: 60%;
+        width: 90%;      }
+        
+      .Menu{
+        display: none;
+      }
+
+    
+    }
+
+    @media (min-width: $sm) and (max-width:$md)  {
+      height: 70rem;
+      width: 100vw;
+      background-position: center;
+      grid-template-areas: 
+      "Logo"
+      "Menu"
+      "Presentacion"    
+      "Boton1Header" 
+      "VideoReel";
+      grid-template-columns: 100%;
+      grid-template-rows: 8% 15% 25% 20% 32%;
+
+      .menuHambur{
+        display: none;
+        
+      }
+    }
+
+    @media (min-width: $md) and (max-width:$lg) {
+      border-radius: 0px;
+      height: 60rem;
+    width: 100vw;
+    background-position: center;
+    grid-template-areas: "Logo Menu" "Presentacion VideoReel" "Presentacion VideoReel" "Boton1Header VideoReel";
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 20% 10% 35% 35%;
+
+    .menuHambur{
+      display: none;
+      
+    }
+
+    .YTB2{
+      
+      height: 60%;
+     /*  width: 90%; */
+
+    }
+
+
+    }
+    
+  }
+
+  
+  .Presetacion {
+    grid-area: Presentacion;
+    color: #fff;
+    width: 80%;
+  
+    /*  height: auto; */
+    justify-self: center;
+    align-self: center;
+  
+    p {
+      font-size: 1.3rem;
+    }
+  }
+  
+  .Titulo {
+    padding-bottom: 1rem;
+  }
+  
+  .Logo {
+    grid-area: Logo;
+    height: auto;
+    width: 50%;
+    justify-self: center;
+    align-self: center;
+  }
+  
+  .YTB2 {
+    grid-area: VideoReel;
+    justify-self: center;
+    align-self: center;
+    height: 90%;
+    width: 90%;
+    animation: pulsate 1.5s infinite alternate;
+    box-shadow: 0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 2rem #cd684f, 0 0 0.8rem #cd684f, 0 0 2.8rem #cd684f, inset 0 0 1.3rem #cd684f;
+  }
+  
+  @keyframes pulsate {
+    100% {
+      box-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #cd684f, 0 0 80px #cd684f, 0 0 90px #cd684f, 0 0 100px #cd684f, 0 0 120px #cd684f;
+    }
+  
+    0% {
+      box-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #fff, 0 0 10px #cd684f, 0 0 45px #cd684f, 0 0 55px #cd684f, 0 0 70px #cd684f, 0 0 80px #cd684f;
+    }
+  }
+  
+  .TrabajosButton {
+    grid-area: Boton1Header;
+    background-color: rgb(214, 106, 83);
+    border: none;
+    height: 20%;
+    width: 60%;
+    align-self: center;
+    justify-self: center;
+    border-radius: 20px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    transition: all 1s;
+    /* font-size: $TrabajosButtonOperationSize; */
+    font-family: 'Aleo', sans-serif;
+    text-decoration: none;
+  
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  
+    &:hover {
+      background-color: #4CAF50;
+      height: 40%;
+      width: 80%;
+      font-size: 2.5rem;
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+
+    /* --------------------------------- Menu small---------------------------------*/
+
+  .menuHambur {
+    grid-area: menuHambur;
+    width: 80vw;
+    justify-self: center;
+    align-self: center;
+
+    .navbar{
+      border-radius: 2%;
+      box-shadow: 0px 10px 13px -7px rgb(214, 106, 83), 5px 5px 15px 5px rgba(0,0,0,0);
+
+      .navbar-toggler{
+        background-color: rgb(214, 106, 83);
+      }
+
+      .offcanvas-header{
+        background-color: rgb(214, 106, 83);
+
+      }
+
+      .offcanvas-body{
+        background-color: black;
+        
+        .nav-item a{
+          color: white;
+        }
+
+        .dropdown-menu{
+          background-color: black;
+
+        }
+
+      }
+
+    }
+
+
+  }
+  
+  /* --------------------------------- Menu Principal---------------------------------*/
+  
+  .Menu {
+    grid-area: Menu;
+    display: block;
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+  
+    ul {
+      list-style: none;
+    }
+  
+    a {
+      color: whitesmoke;
+    }
+  
+    ul {
+      a {
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.1rem;
+        padding: 10px;
+        font-family: 'Aleo', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+  
+        /* flex-direction: row;
+        justify-content: space-between; */
+      }
+  
+      li {
+        position: relative;
+        float: left;
+      }
+    }
+  
+    li {
+      a {
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all 0.45s;
+      }
+  
+      width: 150px;
+      height: 50px;
+      transition: background-position-x 0.6s linear;
+      text-align: center;
+    }
+  
+    :hover {
+      color: rgb(214, 106, 83);
+    }
+  
+    li:hover {
+      background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB2ZXJzaW9uPSIxLjEi%0D%0AIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhs%0D%0AaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB3aWR0%0D%0AaD0iMzkwcHgiIGhlaWdodD0iNTBweCIgdmlld0JveD0iMCAwIDM5MCA1MCIgZW5hYmxlLWJhY2tn%0D%0Acm91bmQ9Im5ldyAwIDAgMzkwIDUwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHBhdGggZmlsbD0i%0D%0Abm9uZSIgc3Ryb2tlPSIjZDk0ZjVjIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLW1pdGVybGlt%0D%0AaXQ9IjEwIiBkPSJNMCw0Ny41ODVjMCwwLDk3LjUsMCwxMzAsMAoJYzEzLjc1LDAsMjguNzQtMzgu%0D%0ANzc4LDQ2LjE2OC0xOS40MTZDMTkyLjY2OSw0Ni41LDI0My42MDMsNDcuNTg1LDI2MCw0Ny41ODVj%0D%0AMzEuODIxLDAsMTMwLDAsMTMwLDAiLz4KPC9zdmc+Cg==");
+      -webkit-animation: line 1s;
+      animation: line 1s;
+    }
+  
+    ul {
+      ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+  
+        li {
+          float: none;
+          width: 150px;
+          padding: 0.5rem;
+        }
+  
+        a {
+          line-height: 120%;
+  
+          /* padding:10px 15px; */
+        }
+      }
+  
+      li:hover > ul {
+        display: block;
+        background-color: black;
+      }
+    }
+  }
+  
+  @-webkit-keyframes line {
+    0% {
+      background-position-x: 390px;
+    }
+  }
+  
+  @keyframes line {
+    0% {
+      background-position-x: 390px;
+    }
+  }
+
+      /* --------------------------------- Menu Generico---------------------------------*/
+
+  
+  .headerGeneral {
+    display: grid;
+    background: rgb(205, 104, 79);
+    background: linear-gradient(349deg, rgba(205, 104, 79, 1) 6%, rgba(36, 39, 69, 1) 100%);
+    font-family: 'Aleo', sans-serif;
+    color: #fff;
+
+    @media (min-width: 0px) and (max-width:$sm)  {
+    height: 9rem;
+    width: 100vw;
+    grid-template-areas: 
+    "Logo"
+    "menuHambur";
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 40% ;
+
+    .Menu{
+      display: none;
+    }
+
+    }
+
+    @media (min-width: $sm) and (max-width:$md)  {
+      height: 15rem;
+      width: 100vw;
+      grid-template-areas: 
+      "Logo"
+      "Menu";
+      grid-template-columns: 100%;
+      grid-template-rows: 50% 40% ;
+  
+      .menuHambur{
+        display: none;
+      }
+  
+      }
+
+      @media (min-width: $md) and (max-width:$lg)  {
+        height: 10rem;
+        width: 100vw;
+        grid-template-areas: 
+        "Logo Menu";
+        grid-template-columns: 20% 80%;
+        grid-template-rows: 100% ;
+    
+        .menuHambur{
+          display: none;
+        }
+    
+        }  
+  
+  }
