@@ -317,49 +317,109 @@ header {
   font-size: 1.4rem; }
 
 /* ---------------------------------About Us---------------------------------*/
+/* ---------------------------------Historia---------------------------------*/
 .Historia {
   display: grid;
   background: #242745;
   background: linear-gradient(6deg, #242745 0%, #cd684f 100%);
   text-align: justify;
-  font-family: 'Aleo', sans-serif;
-  height: 30rem;
-  width: 100vw;
-  grid-template-areas: "Titulo Titulo" "Texto1 Foto1";
-  grid-template-columns: 30% 70%;
-  grid-template-rows: 20% 70%;
-  gap: 1rem; }
+  font-family: 'Aleo', sans-serif; }
+  @media (min-width: 0px) and (max-width: 516px) {
+    .Historia {
+      height: 30rem;
+      width: 100vw;
+      grid-template-areas: "Titulo" "Foto1" "Texto1";
+      grid-template-columns: 100%;
+      grid-template-rows: 20% 40% 30%;
+      gap: 1rem; }
+      .Historia .Foto1 {
+        width: 70%;
+        height: auto;
+        border-radius: 50px; }
+      .Historia .Texto1 {
+        /* height: 10rem; */
+        width: 80%;
+        font-size: 0.9rem;
+        align-self: center;
+        font-size: 0.9rem; } }
+  @media (min-width: 516px) and (max-width: 800px) {
+    .Historia {
+      height: 40rem;
+      width: 100vw;
+      grid-template-areas: "Titulo"  "Foto1"  "Texto1";
+      grid-template-columns: 100%;
+      grid-template-rows: 20% 40% 40%;
+      gap: 1rem; }
+      .Historia .Foto1 {
+        width: 70%;
+        height: auto;
+        border-radius: 50px; }
+      .Historia .Texto1 {
+        width: 80%;
+        font-size: 10rem;
+        align-self: center;
+        font-size: 1.5rem; } }
+  @media (min-width: 800px) and (max-width: 4000px) {
+    .Historia {
+      height: 40rem;
+      width: 100vw;
+      grid-template-areas: "Titulo Titulo" "Texto1 Foto1";
+      grid-template-columns: 40% 60%;
+      grid-template-rows: 20% 70%;
+      gap: 1rem; }
+      .Historia .Foto1 {
+        width: 70%;
+        height: auto;
+        border-radius: 50px; }
+      .Historia .Texto1 {
+        /*  height: 5rem; */
+        width: 90%;
+        font-size: 1.5rem; } }
   .Historia .Titulo {
     grid-area: Titulo; }
+  .Historia .Texto1 {
+    grid-area: Texto1;
+    justify-self: center;
+    align-self: center;
+    color: white;
+    /* height: 20rem;
+      width: 25rem; */ }
+  .Historia .Foto1 {
+    grid-area: Foto1;
+    justify-self: center;
+    align-self: center;
+    /* width: 70%;
+      height: auto; */
+    border-radius: 50px; }
 
-.Texto1 {
-  grid-area: Texto1;
-  justify-self: center;
-  align-self: center;
-  color: white;
-  height: 20rem;
-  width: 25rem;
-  font-size: 0.9rem; }
-
-.Historia .Foto1 {
-  grid-area: Foto1;
-  justify-self: center;
-  align-self: center;
-  width: 70%;
-  height: auto;
-  border-radius: 50px; }
-
+/* ---------------------------------Equipos---------------------------------*/
 .Equipo {
   display: grid;
   background: #242745;
   background: linear-gradient(166deg, #242745 0%, #cd684f 100%);
-  width: 100vw;
-  height: 100rem;
-  grid-template-areas: "Titulo" "Tarjetas";
-  grid-template-columns: 100%;
-  grid-template-rows: 20% 90%;
   justify-self: center;
   align-self: center; }
+  @media (min-width: 0px) and (max-width: 516px) {
+    .Equipo {
+      width: 100vw;
+      height: 140rem;
+      grid-template-areas: "Titulo" "Tarjetas";
+      grid-template-columns: 100%;
+      grid-template-rows: 20% 70%; } }
+  @media (min-width: 516px) and (max-width: 800px) {
+    .Equipo {
+      width: 100vw;
+      height: 120rem;
+      grid-template-areas: "Titulo" "Tarjetas";
+      grid-template-columns: 100%;
+      grid-template-rows: 20% 80%; } }
+  @media (min-width: 800px) and (max-width: 4000px) {
+    .Equipo {
+      width: 100vw;
+      height: 120rem;
+      grid-template-areas: "Titulo" "Tarjetas";
+      grid-template-columns: 100%;
+      grid-template-rows: 20% 80%; } }
   .Equipo .Titulo {
     grid-area: Titulo;
     justify-self: center;
@@ -375,6 +435,21 @@ header {
     width: 100vw;
     height: auto; }
 
+@media (min-width: 0px) and (max-width: 516px) {
+  .Tarjetas article {
+    width: 10rem;
+    height: 38rem; } }
+
+@media (min-width: 516px) and (max-width: 800px) {
+  .Tarjetas article {
+    width: 20rem;
+    height: 30rem; } }
+
+@media (min-width: 800px) and (max-width: 4000px) {
+  .Tarjetas article {
+    width: 20rem;
+    height: 30rem; } }
+
 .Tarjetas h3 {
   text-align: center; }
 
@@ -386,14 +461,16 @@ header {
   display: inline-block;
   background: #242745;
   background: linear-gradient(166deg, #242745 0%, #cd684f 100%);
-  width: 15rem;
-  height: 30rem;
+  /* width: 15rem;
+      height: 30rem; */
   border-style: solid;
   border-width: 0.2rem;
   text-align: justify;
   color: white;
   border-color: #242745;
-  padding: 1rem; }
+  padding: 1rem;
+  justify-self: center;
+  align-self: center; }
 
 .Tarjetas p {
   width: 100%;
@@ -404,12 +481,30 @@ header {
 .formularioContacto {
   display: grid;
   background: #ff9175;
-  background: linear-gradient(202deg, #ff9175 0%, #242745 100%);
-  width: 100vw;
-  height: 60rem;
-  grid-template-areas: "Titulo" "Formulario";
-  grid-template-columns: 100%;
-  grid-template-rows: 20% 80%; }
+  background: linear-gradient(202deg, #ff9175 0%, #242745 100%); }
+  @media (min-width: 0px) and (max-width: 516px) {
+    .formularioContacto {
+      width: 100vw;
+      height: 60rem;
+      grid-template-areas: "Titulo" "Formulario";
+      grid-template-columns: 100%;
+      /* grid-template-rows: 20% 80%; */ } }
+  @media (min-width: 516px) and (max-width: 800px) {
+    .formularioContacto {
+      width: 100vw;
+      height: 60rem;
+      grid-template-areas: "Titulo" "Formulario";
+      grid-template-columns: 100%;
+      /* grid-template-rows: 20% 80%; */ }
+      .formularioContacto .formulario {
+        width: 60%; } }
+  @media (min-width: 800px) and (max-width: 4000px) {
+    .formularioContacto {
+      width: 100vw;
+      height: 60rem;
+      grid-template-areas: "Titulo" "Formulario";
+      grid-template-columns: 100%;
+      /* grid-template-rows: 20% 80%; */ } }
   .formularioContacto .Titulo {
     grid-area: Titulo;
     justify-self: center;
@@ -430,33 +525,52 @@ header {
 .Jobs {
   display: grid;
   background: #ff9175;
-  background: linear-gradient(16deg, #ff9175 0%, #242745 100%);
-  height: 70rem;
-  width: 100vw;
-  height: 80rem;
-  grid-template-areas: "Titulo" "SPOTY2" "SCLD";
-  grid-template-columns: 100%;
-  grid-template-rows: 10% 45% 45%; }
+  background: linear-gradient(16deg, #ff9175 0%, #242745 100%); }
+  @media (min-width: 0px) and (max-width: 516px) {
+    .Jobs {
+      width: 100vw;
+      height: 80rem;
+      grid-template-areas: "Titulo" "SPOTY2" "SCLD";
+      grid-template-columns: 100%;
+      grid-template-rows: 20% 30% 35%; }
+      .Jobs .SDCLD {
+        height: 50%; } }
+  @media (min-width: 516px) and (max-width: 800px) {
+    .Jobs {
+      width: 100vw;
+      height: 80rem;
+      grid-template-areas: "Titulo" "SPOTY2" "SCLD";
+      grid-template-columns: 100%;
+      grid-template-rows: 20% 30% 35%; }
+      .Jobs .SDCLD {
+        height: 80%; } }
+  @media (min-width: 800px) and (max-width: 4000px) {
+    .Jobs {
+      width: 100vw;
+      height: 80rem;
+      grid-template-areas: "Titulo" "SPOTY2" "SCLD";
+      grid-template-columns: 100%;
+      grid-template-rows: 20% 30% 35%; }
+      .Jobs .SDCLD {
+        height: 80%; } }
   .Jobs .Titulo {
     grid-area: Titulo;
     justify-self: center;
     align-self: center; }
-
-.SPTY2 {
-  grid-area: SPOTY2;
-  justify-self: center;
-  align-self: center;
-  width: 90%;
-  animation: pulsate 1.5s infinite alternate;
-  box-shadow: 0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 2rem #cd684f, 0 0 0.8rem #cd684f, 0 0 2.8rem #cd684f, inset 0 0 1.3rem #cd684f; }
-
-.SDCLD {
-  grid-area: SCLD;
-  justify-self: center;
-  align-self: center;
-  width: 90%;
-  animation: pulsate 1.5s infinite alternate;
-  box-shadow: 0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 2rem #cd684f, 0 0 0.8rem #cd684f, 0 0 2.8rem #cd684f, inset 0 0 1.3rem #cd684f; }
+  .Jobs .SPTY2 {
+    grid-area: SPOTY2;
+    justify-self: center;
+    align-self: center;
+    width: 90%;
+    animation: pulsate 1.5s infinite alternate;
+    box-shadow: 0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 2rem #cd684f, 0 0 0.8rem #cd684f, 0 0 2.8rem #cd684f, inset 0 0 1.3rem #cd684f; }
+  .Jobs .SDCLD {
+    grid-area: SCLD;
+    justify-self: center;
+    align-self: center;
+    width: 90%;
+    animation: pulsate 1.5s infinite alternate;
+    box-shadow: 0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 2rem #cd684f, 0 0 0.8rem #cd684f, 0 0 2.8rem #cd684f, inset 0 0 1.3rem #cd684f; }
 
 /* --------------------------------- Titulos---------------------------------*/
 .Titulo h1 {
@@ -482,12 +596,63 @@ header {
   display: grid;
   background: #ff9175;
   background: radial-gradient(circle, #ff9175 0%, #242745 71%);
-  background-color: #d66a53;
-  height: 70rem;
-  width: 100vw;
-  grid-template-areas: "Titulo Titulo" "SPOTY Foto2 " "Foto3 YTB";
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 10% 40% 40%; }
+  background-color: #d66a53; }
+  @media (min-width: 0px) and (max-width: 516px) {
+    .Reproductores {
+      /* height: 70rem;
+    width: 100vw;
+    grid-template-areas: "Titulo Titulo" "SPOTY Foto2 " "Foto3 YTB";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 40% 40%; */
+      height: 90rem;
+      width: 100vw;
+      grid-template-areas: "Titulo" "SPOTY" "Foto2 " "YTB" "Foto3";
+      grid-template-columns: 100%;
+      grid-template-rows: 10% 20% 20% 20% 20%; }
+      .Reproductores .YTB {
+        height: 60%;
+        width: 90%; }
+      .Reproductores .SPTY {
+        height: 60%;
+        width: 90%;
+        /* animation: pulsate 1.5s infinite alternate;
+      box-shadow: 0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 2rem #cd684f, 0 0 0.8rem #cd684f, 0 0 2.8rem #cd684f, inset 0 0 rem #cd684f;
+   */ } }
+  @media (min-width: 516px) and (max-width: 800px) {
+    .Reproductores {
+      /* height: 70rem;
+      width: 100vw;
+      grid-template-areas: "Titulo Titulo" "SPOTY Foto2 " "Foto3 YTB";
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 10% 40% 40%; */
+      height: 160rem;
+      width: 100vw;
+      grid-template-areas: "Titulo" "SPOTY" "Foto2 " "YTB" "Foto3";
+      grid-template-columns: 100%;
+      grid-template-rows: 10% 20% 20% 30% 20%; }
+      .Reproductores .YTB {
+        height: 60%;
+        width: 90%; }
+      .Reproductores .SPTY {
+        width: 90%;
+        /* animation: pulsate 1.5s infinite alternate;
+        box-shadow: 0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 2rem #cd684f, 0 0 0.8rem #cd684f, 0 0 2.8rem #cd684f, inset 0 0 rem #cd684f;
+     */ } }
+  @media (min-width: 800px) and (max-width: 4000px) {
+    .Reproductores {
+      height: 100rem;
+      width: 100vw;
+      grid-template-areas: "Titulo Titulo" "SPOTY Foto2 " "Foto3 YTB";
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 10% 40% 40%; }
+      .Reproductores .YTB {
+        height: 70%;
+        width: 80%; }
+      .Reproductores .SPTY {
+        width: 90%;
+        /* animation: pulsate 1.5s infinite alternate;
+          box-shadow: 0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 2rem #cd684f, 0 0 0.8rem #cd684f, 0 0 2.8rem #cd684f, inset 0 0 rem #cd684f;
+       */ } }
   .Reproductores .Titulo {
     grid-area: Titulo;
     justify-self: center;
@@ -496,10 +661,7 @@ header {
 .SPTY {
   grid-area: SPOTY;
   justify-self: center;
-  align-self: center;
-  width: 90%;
-  animation: pulsate 1.5s infinite alternate;
-  box-shadow: 0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 2rem #cd684f, 0 0 0.8rem #cd684f, 0 0 2.8rem #cd684f, inset 0 0 1.3rem #cd684f; }
+  align-self: center; }
 
 .Reproductores .Foto2 {
   grid-area: Foto2;
@@ -534,12 +696,37 @@ header {
   background: linear-gradient(58deg, #242745 0%, #cd684f 100%);
   font-family: 'Aleo', sans-serif;
   /*     padding: 1rem;
-     */
-  height: 50rem;
-  width: 100vw;
-  grid-template-areas: "Titulo" "Tabla1";
-  grid-template-columns: 100%;
-  grid-template-rows: 10% 90%; }
+     */ }
+  @media (min-width: 0px) and (max-width: 516px) {
+    .listaPrecios {
+      height: 100rem;
+      width: 100vw;
+      grid-template-areas: "Titulo" "Tabla1";
+      grid-template-columns: 100%;
+      grid-template-rows: 10% 90%; }
+      .listaPrecios table {
+        height: auto;
+        width: auto; } }
+  @media (min-width: 516px) and (max-width: 800px) {
+    .listaPrecios {
+      height: 50rem;
+      width: 100vw;
+      grid-template-areas: "Titulo" "Tabla1";
+      grid-template-columns: 100%;
+      grid-template-rows: 10% 90%; }
+      .listaPrecios table {
+        height: auto;
+        width: auto; } }
+  @media (min-width: 800px) and (max-width: 4000px) {
+    .listaPrecios {
+      height: 50rem;
+      width: 100vw;
+      grid-template-areas: "Titulo" "Tabla1";
+      grid-template-columns: 100%;
+      grid-template-rows: 20% 70%; }
+      .listaPrecios table {
+        height: auto;
+        width: auto; } }
   .listaPrecios .Titulo {
     grid-area: Titulo;
     justify-self: center;
@@ -549,8 +736,8 @@ header {
     background-color: #d66a53;
     font-family: 'Aleo', sans-serif;
     padding: 1rem;
-    height: 30rem;
-    width: auto;
+    /* height: 30rem;
+      width: auto; */
     justify-self: center;
     align-self: center;
     color: white;

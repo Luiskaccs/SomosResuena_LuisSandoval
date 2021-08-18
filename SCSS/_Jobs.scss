@@ -3,19 +3,58 @@
     display: grid;
     background: rgb(255, 145, 117);
     background: linear-gradient(16deg, rgba(255, 145, 117, 1) 0%, rgba(36, 39, 69, 1) 100%);
-    height: 70rem;
-    width: 100vw;
-    height: 80rem;
-    grid-template-areas: "Titulo" "SPOTY2" "SCLD";
-    grid-template-columns: 100%;
-    grid-template-rows: 10% 45% 45%;
   
+    
+    @media (min-width: 0px) and (max-width:$sm){
+
+      width: 100vw;
+      height: 80rem;
+      grid-template-areas: "Titulo" "SPOTY2" "SCLD";
+      grid-template-columns: 100%;
+      grid-template-rows: 20% 30% 35%;
+
+      .SDCLD{
+        height: 50%;
+      }
+
+      }
+
+          
+    @media (min-width: $sm) and (max-width:$md){
+
+      width: 100vw;
+      height: 80rem;
+      grid-template-areas: "Titulo" "SPOTY2" "SCLD";
+      grid-template-columns: 100%;
+      grid-template-rows: 20% 30% 35%;
+
+      .SDCLD{
+        height: 80%;
+      }
+
+      }
+
+        
+    @media (min-width: $md) and (max-width:$lg){
+
+        width: 100vw;
+        height: 80rem;
+        grid-template-areas: "Titulo" "SPOTY2" "SCLD";
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 30% 35%;
+  
+        .SDCLD{
+          height: 80%;
+        }
+  
+        }
+
     .Titulo {
       grid-area: Titulo;
       justify-self: center;
       align-self: center;
     }
-  }
+  
   
   .SPTY2 {
     grid-area: SPOTY2;
@@ -34,3 +73,5 @@
     animation: pulsate 1.5s infinite alternate;
     box-shadow: 0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 2rem #cd684f, 0 0 0.8rem #cd684f, 0 0 2.8rem #cd684f, inset 0 0 1.3rem #cd684f;
   }
+
+}
