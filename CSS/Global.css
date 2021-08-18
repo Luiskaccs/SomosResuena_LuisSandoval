@@ -8,32 +8,41 @@ header {
   color: #fff; }
   @media (min-width: 0px) and (max-width: 516px) {
     header {
-      height: 1400px;
+      height: 70rem;
       width: 100vw;
       background-position: center;
-      grid-template-areas: "Logo" "Menu" "Presentacion"     "Boton1Header"  "VideoReel";
+      grid-template-areas: "Logo" "menuHambur" "Presentacion"     "Boton1Header"  "VideoReel";
       grid-template-columns: 100%;
-      grid-template-rows: 10% 20% 10% 20% 30%; }
+      grid-template-rows: 10% 5% 40% 15% 30%; }
       header .YTB2 {
         height: 60%;
-        width: 90%; } }
+        width: 90%; }
+      header .Menu {
+        display: none; } }
   @media (min-width: 516px) and (max-width: 800px) {
     header {
-      height: 1400px;
+      height: 70rem;
       width: 100vw;
       background-position: center;
       grid-template-areas: "Logo" "Menu" "Presentacion"     "Boton1Header"  "VideoReel";
       grid-template-columns: 100%;
-      grid-template-rows: 1% 30% 40% 10% 20%; } }
-  @media (min-width: 800px) and (max-width: 3000px) {
+      grid-template-rows: 8% 15% 25% 20% 32%; }
+      header .menuHambur {
+        display: none; } }
+  @media (min-width: 800px) and (max-width: 4000px) {
     header {
       border-radius: 0px;
-      height: 700px;
+      height: 60rem;
       width: 100vw;
       background-position: center;
-      grid-template-areas: "Logo Menu" "Presentacion VideoReel" "Boton1Header VideoReel";
+      grid-template-areas: "Logo Menu" "Presentacion VideoReel" "Presentacion VideoReel" "Boton1Header VideoReel";
       grid-template-columns: 40% 60%;
-      grid-template-rows: 33.3% 33.3% 33.3%; } }
+      grid-template-rows: 20% 10% 35% 35%; }
+      header .menuHambur {
+        display: none; }
+      header .YTB2 {
+        height: 60%;
+        /*  width: 90%; */ } }
 
 .Presetacion {
   grid-area: Presentacion;
@@ -56,7 +65,6 @@ header {
   align-self: center; }
 
 .YTB2 {
-  grid-area: VideoReel;
   grid-area: VideoReel;
   justify-self: center;
   align-self: center;
@@ -96,6 +104,26 @@ header {
     font-size: 2.5rem;
     text-decoration: none;
     color: #fff; }
+
+/* --------------------------------- Menu small---------------------------------*/
+.menuHambur {
+  grid-area: menuHambur;
+  width: 80vw;
+  justify-self: center;
+  align-self: center; }
+  .menuHambur .navbar {
+    border-radius: 2%;
+    box-shadow: 0px 10px 13px -7px #d66a53, 5px 5px 15px 5px rgba(0, 0, 0, 0); }
+    .menuHambur .navbar .navbar-toggler {
+      background-color: #d66a53; }
+    .menuHambur .navbar .offcanvas-header {
+      background-color: #d66a53; }
+    .menuHambur .navbar .offcanvas-body {
+      background-color: black; }
+      .menuHambur .navbar .offcanvas-body .nav-item a {
+        color: white; }
+      .menuHambur .navbar .offcanvas-body .dropdown-menu {
+        background-color: black; }
 
 /* --------------------------------- Menu Principal---------------------------------*/
 .Menu {
@@ -221,17 +249,27 @@ header {
   height: 3.4rem;
   text-decoration: none;
   font-size: 0.8rem; }
+  .discordFixed a img {
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem; }
+  .discordFixed a p {
+    display: block;
+    text-align: left;
+    padding-left: 0.3rem;
+    color: white; }
 
-.discordFixed img {
-  display: block;
-  width: 2.5rem;
-  height: 2.5rem; }
-
-.discordFixed p {
-  display: block;
-  text-align: left;
-  padding-left: 0.3rem;
-  color: white; }
+@media (min-width: 0px) and (max-width: 516px) {
+  .discordFixed a {
+    background-color: unset;
+    left: calc(100vw - 90px);
+    bottom: 4%; }
+    .discordFixed a p {
+      display: none; }
+    .discordFixed a img {
+      display: block;
+      width: 4rem;
+      height: 4rem; } }
 
 .fotoTeam img {
   display: block;
@@ -244,14 +282,37 @@ header {
 .preFooter {
   background-color: black;
   display: grid;
-  color: whitesmoke;
-  background-color: black;
-  width: 100vw;
-  height: 18rem;
-  grid-template-areas: "logoFooter FLista1 FLista2" "Redeslogos Redeslogos Redeslogos";
-  grid-template-columns: 40% 30% 30%;
-  grid-template-rows: 80% 10%;
-  align-items: center; }
+  color: whitesmoke; }
+  @media (min-width: 0px) and (max-width: 516px) {
+    .preFooter {
+      width: 100vw;
+      height: 50rem;
+      grid-template-areas: "logoFooter" "FLista1"  "FLista2" "Redeslogos" "end";
+      grid-template-columns: 100%;
+      grid-template-rows: 30% 25% 20% 10% 10%;
+      align-items: center; }
+      .preFooter .FooterLista1 {
+        justify-self: center;
+        align-self: center; }
+      .preFooter .FooterLista2 {
+        justify-self: center;
+        align-self: center; } }
+  @media (min-width: 516px) and (max-width: 800px) {
+    .preFooter {
+      width: 100vw;
+      height: 30rem;
+      grid-template-areas: "logoFooter FLista1 FLista2" "Redeslogos Redeslogos Redeslogos" "end end end";
+      grid-template-columns: 40% 30% 30%;
+      grid-template-rows: 70% 15% 15%;
+      align-items: center; } }
+  @media (min-width: 800px) and (max-width: 4000px) {
+    .preFooter {
+      width: 100vw;
+      height: 30rem;
+      grid-template-areas: "logoFooter FLista1 FLista2" "Redeslogos Redeslogos Redeslogos" "end end end";
+      grid-template-columns: 40% 30% 30%;
+      grid-template-rows: 60% 10% 30%;
+      align-items: center; } }
   .preFooter .logoFooter {
     grid-area: logoFooter;
     height: auto;
@@ -261,7 +322,7 @@ header {
     grid-area: FLista1;
     height: auto;
     width: 60%;
-    justify-self: left; }
+    /* justify-self: left; */ }
     .preFooter .FooterLista1 li {
       background-color: black;
       color: white;
@@ -270,7 +331,7 @@ header {
     grid-area: FLista2;
     height: auto;
     width: 60%;
-    justify-self: left; }
+    /* justify-self: left; */ }
     .preFooter .FooterLista2 li {
       background-color: black;
       color: white;
@@ -294,12 +355,13 @@ header {
         height: 40px; }
 
 .End {
+  grid-area: end;
   text-align: center;
   color: whitesmoke;
   background-color: black;
   font-family: 'Aleo', sans-serif;
-  width: 100vw;
-  height: 2em; }
+  width: 100%;
+  /* height: 4em; */ }
 
 .TrabajosButton {
   font-size: 1.4rem; }
@@ -566,3 +628,88 @@ header {
   .listaPrecios ol {
     list-style-position: inside;
     list-style-type: square; }
+
+/* --------------------------------- Footer ---------------------------------*/
+.preFooter {
+  background-color: black;
+  display: grid;
+  color: whitesmoke; }
+  @media (min-width: 0px) and (max-width: 516px) {
+    .preFooter {
+      width: 100vw;
+      height: 50rem;
+      grid-template-areas: "logoFooter" "FLista1"  "FLista2" "Redeslogos" "end";
+      grid-template-columns: 100%;
+      grid-template-rows: 30% 25% 20% 10% 10%;
+      align-items: center; }
+      .preFooter .FooterLista1 {
+        justify-self: center;
+        align-self: center; }
+      .preFooter .FooterLista2 {
+        justify-self: center;
+        align-self: center; } }
+  @media (min-width: 516px) and (max-width: 800px) {
+    .preFooter {
+      width: 100vw;
+      height: 30rem;
+      grid-template-areas: "logoFooter FLista1 FLista2" "Redeslogos Redeslogos Redeslogos" "end end end";
+      grid-template-columns: 40% 30% 30%;
+      grid-template-rows: 70% 15% 15%;
+      align-items: center; } }
+  @media (min-width: 800px) and (max-width: 4000px) {
+    .preFooter {
+      width: 100vw;
+      height: 30rem;
+      grid-template-areas: "logoFooter FLista1 FLista2" "Redeslogos Redeslogos Redeslogos" "end end end";
+      grid-template-columns: 40% 30% 30%;
+      grid-template-rows: 60% 10% 30%;
+      align-items: center; } }
+  .preFooter .logoFooter {
+    grid-area: logoFooter;
+    height: auto;
+    width: 50%;
+    justify-self: center; }
+  .preFooter .FooterLista1 {
+    grid-area: FLista1;
+    height: auto;
+    width: 60%;
+    /* justify-self: left; */ }
+    .preFooter .FooterLista1 li {
+      background-color: black;
+      color: white;
+      font-family: 'Aleo', sans-serif; }
+  .preFooter .FooterLista2 {
+    grid-area: FLista2;
+    height: auto;
+    width: 60%;
+    /* justify-self: left; */ }
+    .preFooter .FooterLista2 li {
+      background-color: black;
+      color: white;
+      font-family: 'Aleo', sans-serif; }
+  .preFooter .Redeslogos {
+    grid-area: Redeslogos;
+    justify-self: center;
+    align-self: center;
+    display: flexbox;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem; }
+    .preFooter .Redeslogos a {
+      display: inline-block;
+      padding: 0.5em;
+      background-color: #d66a53;
+      border-radius: 60%; }
+      .preFooter .Redeslogos a svg {
+        color: white;
+        width: 40px;
+        height: 40px; }
+
+.End {
+  grid-area: end;
+  text-align: center;
+  color: whitesmoke;
+  background-color: black;
+  font-family: 'Aleo', sans-serif;
+  width: 100%;
+  /* height: 4em; */ }
