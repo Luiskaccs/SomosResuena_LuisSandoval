@@ -317,49 +317,109 @@ header {
   font-size: 1.4rem; }
 
 /* ---------------------------------About Us---------------------------------*/
+/* ---------------------------------Historia---------------------------------*/
 .Historia {
   display: grid;
   background: #242745;
   background: linear-gradient(6deg, #242745 0%, #cd684f 100%);
   text-align: justify;
-  font-family: 'Aleo', sans-serif;
-  height: 30rem;
-  width: 100vw;
-  grid-template-areas: "Titulo Titulo" "Texto1 Foto1";
-  grid-template-columns: 30% 70%;
-  grid-template-rows: 20% 70%;
-  gap: 1rem; }
+  font-family: 'Aleo', sans-serif; }
+  @media (min-width: 0px) and (max-width: 516px) {
+    .Historia {
+      height: 30rem;
+      width: 100vw;
+      grid-template-areas: "Titulo" "Foto1" "Texto1";
+      grid-template-columns: 100%;
+      grid-template-rows: 20% 40% 30%;
+      gap: 1rem; }
+      .Historia .Foto1 {
+        width: 70%;
+        height: auto;
+        border-radius: 50px; }
+      .Historia .Texto1 {
+        /* height: 10rem; */
+        width: 80%;
+        font-size: 0.9rem;
+        align-self: center;
+        font-size: 0.9rem; } }
+  @media (min-width: 516px) and (max-width: 800px) {
+    .Historia {
+      height: 40rem;
+      width: 100vw;
+      grid-template-areas: "Titulo"  "Foto1"  "Texto1";
+      grid-template-columns: 100%;
+      grid-template-rows: 20% 40% 40%;
+      gap: 1rem; }
+      .Historia .Foto1 {
+        width: 70%;
+        height: auto;
+        border-radius: 50px; }
+      .Historia .Texto1 {
+        width: 80%;
+        font-size: 10rem;
+        align-self: center;
+        font-size: 1.5rem; } }
+  @media (min-width: 800px) and (max-width: 4000px) {
+    .Historia {
+      height: 40rem;
+      width: 100vw;
+      grid-template-areas: "Titulo Titulo" "Texto1 Foto1";
+      grid-template-columns: 40% 60%;
+      grid-template-rows: 20% 70%;
+      gap: 1rem; }
+      .Historia .Foto1 {
+        width: 70%;
+        height: auto;
+        border-radius: 50px; }
+      .Historia .Texto1 {
+        /*  height: 5rem; */
+        width: 90%;
+        font-size: 1.5rem; } }
   .Historia .Titulo {
     grid-area: Titulo; }
+  .Historia .Texto1 {
+    grid-area: Texto1;
+    justify-self: center;
+    align-self: center;
+    color: white;
+    /* height: 20rem;
+      width: 25rem; */ }
+  .Historia .Foto1 {
+    grid-area: Foto1;
+    justify-self: center;
+    align-self: center;
+    /* width: 70%;
+      height: auto; */
+    border-radius: 50px; }
 
-.Texto1 {
-  grid-area: Texto1;
-  justify-self: center;
-  align-self: center;
-  color: white;
-  height: 20rem;
-  width: 25rem;
-  font-size: 0.9rem; }
-
-.Historia .Foto1 {
-  grid-area: Foto1;
-  justify-self: center;
-  align-self: center;
-  width: 70%;
-  height: auto;
-  border-radius: 50px; }
-
+/* ---------------------------------Equipos---------------------------------*/
 .Equipo {
   display: grid;
   background: #242745;
   background: linear-gradient(166deg, #242745 0%, #cd684f 100%);
-  width: 100vw;
-  height: 100rem;
-  grid-template-areas: "Titulo" "Tarjetas";
-  grid-template-columns: 100%;
-  grid-template-rows: 20% 90%;
   justify-self: center;
   align-self: center; }
+  @media (min-width: 0px) and (max-width: 516px) {
+    .Equipo {
+      width: 100vw;
+      height: 140rem;
+      grid-template-areas: "Titulo" "Tarjetas";
+      grid-template-columns: 100%;
+      grid-template-rows: 20% 70%; } }
+  @media (min-width: 516px) and (max-width: 800px) {
+    .Equipo {
+      width: 100vw;
+      height: 120rem;
+      grid-template-areas: "Titulo" "Tarjetas";
+      grid-template-columns: 100%;
+      grid-template-rows: 20% 80%; } }
+  @media (min-width: 800px) and (max-width: 4000px) {
+    .Equipo {
+      width: 100vw;
+      height: 120rem;
+      grid-template-areas: "Titulo" "Tarjetas";
+      grid-template-columns: 100%;
+      grid-template-rows: 20% 80%; } }
   .Equipo .Titulo {
     grid-area: Titulo;
     justify-self: center;
@@ -375,6 +435,21 @@ header {
     width: 100vw;
     height: auto; }
 
+@media (min-width: 0px) and (max-width: 516px) {
+  .Tarjetas article {
+    width: 10rem;
+    height: 38rem; } }
+
+@media (min-width: 516px) and (max-width: 800px) {
+  .Tarjetas article {
+    width: 20rem;
+    height: 30rem; } }
+
+@media (min-width: 800px) and (max-width: 4000px) {
+  .Tarjetas article {
+    width: 20rem;
+    height: 30rem; } }
+
 .Tarjetas h3 {
   text-align: center; }
 
@@ -386,14 +461,16 @@ header {
   display: inline-block;
   background: #242745;
   background: linear-gradient(166deg, #242745 0%, #cd684f 100%);
-  width: 15rem;
-  height: 30rem;
+  /* width: 15rem;
+      height: 30rem; */
   border-style: solid;
   border-width: 0.2rem;
   text-align: justify;
   color: white;
   border-color: #242745;
-  padding: 1rem; }
+  padding: 1rem;
+  justify-self: center;
+  align-self: center; }
 
 .Tarjetas p {
   width: 100%;
