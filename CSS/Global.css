@@ -1,4 +1,5 @@
 /* --------------------------------- Header---------------------------------*/
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700");
 header {
   display: grid;
   background-image: url("Banner.png");
@@ -393,89 +394,192 @@ header {
     border-radius: 50px; }
 
 /* ---------------------------------Equipos---------------------------------*/
-.Equipo {
-  display: grid;
-  background: #242745;
-  background: linear-gradient(166deg, #242745 0%, #cd684f 100%);
-  justify-self: center;
-  align-self: center; }
-  @media (min-width: 0px) and (max-width: 516px) {
-    .Equipo {
-      width: 100vw;
-      height: 140rem;
-      grid-template-areas: "Titulo" "Tarjetas";
-      grid-template-columns: 100%;
-      grid-template-rows: 20% 70%; } }
-  @media (min-width: 516px) and (max-width: 800px) {
-    .Equipo {
-      width: 100vw;
-      height: 120rem;
-      grid-template-areas: "Titulo" "Tarjetas";
-      grid-template-columns: 100%;
-      grid-template-rows: 20% 80%; } }
-  @media (min-width: 800px) and (max-width: 4000px) {
-    .Equipo {
-      width: 100vw;
-      height: 120rem;
-      grid-template-areas: "Titulo" "Tarjetas";
-      grid-template-columns: 100%;
-      grid-template-rows: 20% 80%; } }
-  .Equipo .Titulo {
-    grid-area: Titulo;
-    justify-self: center;
-    align-self: center; }
-  .Equipo .Tarjetas {
-    grid-area: Tarjetas;
-    display: flexbox;
-    flex-direction: row;
-    align-items: center;
-    font-family: 'Aleo', sans-serif;
+/* 
+
+  .Equipo {
+    display: grid;
+    background: rgb(36, 39, 69);
+    background: linear-gradient(166deg, rgba(36, 39, 69, 1) 0%, rgba(205, 104, 79, 1) 100%);
     justify-self: center;
     align-self: center;
+
+    @media (min-width: 0px) and (max-width:$sm)  {
     width: 100vw;
-    height: auto; }
+    height: 140rem;
+    grid-template-areas: 
+    "Titulo"
+    "Tarjetas";
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 70%;
+    }
 
-@media (min-width: 0px) and (max-width: 516px) {
-  .Tarjetas article {
-    width: 10rem;
-    height: 38rem; } }
+    @media (min-width: $sm) and (max-width:$md)  {
+      width: 100vw;
+      height: 120rem;
+      grid-template-areas: 
+      "Titulo"
+      "Tarjetas";
+      grid-template-columns: 100%;
+      grid-template-rows: 20% 80%;
+      }
 
-@media (min-width: 516px) and (max-width: 800px) {
-  .Tarjetas article {
-    width: 20rem;
-    height: 30rem; } }
+      @media (min-width: $md) and (max-width:$lg)  {
+        width: 100vw;
+        height: 120rem;
+        grid-template-areas: 
+        "Titulo"
+        "Tarjetas";
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 80%;
+        }
 
-@media (min-width: 800px) and (max-width: 4000px) {
-  .Tarjetas article {
-    width: 20rem;
-    height: 30rem; } }
 
-.Tarjetas h3 {
-  text-align: center; }
+  
+    .Titulo {
+      grid-area: Titulo;
+      justify-self: center;
+      align-self: center;
+    }
+  
+    .Tarjetas {
+      grid-area: Tarjetas;
+      display: flexbox;
+      flex-direction: row;
+      align-items: center;
+      font-family: 'Aleo', sans-serif;
+      justify-self: center;
+      align-self: center;
+      width: 100vw;
+      height: auto;
+    }
+  }
+  
+  .Tarjetas {
 
-.Tarjetas h2 {
-  text-align: center;
-  padding-top: 1rem; }
+    @media (min-width: 0px) and (max-width:$sm){
 
-.Tarjetas article {
-  display: inline-block;
+      article {
+        width: 10rem;
+        height: 38rem;
+      }
+    }
+
+    @media (min-width: $sm) and (max-width:$md){
+
+      article {
+        width: 20rem;
+        height: 30rem;
+      }
+    }
+
+    @media (min-width: $md) and (max-width:$lg){
+
+      article {
+        width: 20rem;
+        height: 30rem;
+      }
+
+    }
+    
+
+    h3 {
+      text-align: center;
+    }
+  
+    h2 {
+      text-align: center;
+      padding-top: 1rem;
+    }
+  
+    article {
+      display: inline-block;
+      background: rgb(36, 39, 69);
+      background: linear-gradient(166deg, rgba(36, 39, 69, 1) 0%, rgba(205, 104, 79, 1) 100%);
+      border-style: solid;
+      border-width: 0.2rem;
+      text-align: justify;
+      color: white;
+      border-color: rgb(36, 39, 69);
+      padding: 1rem;
+      justify-self: center;
+      align-self: center;
+    }
+  
+    p {
+      width: 100%;
+      height: 20rem;
+      font-size: 10px;
+    }
+  } */
+.Equipo {
+  width: 100vw;
   background: #242745;
   background: linear-gradient(166deg, #242745 0%, #cd684f 100%);
-  /* width: 15rem;
-      height: 30rem; */
-  border-style: solid;
-  border-width: 0.2rem;
-  text-align: justify;
-  color: white;
-  border-color: #242745;
-  padding: 1rem;
-  justify-self: center;
-  align-self: center; }
-
-.Tarjetas p {
-  width: 100%;
-  height: 20rem;
-  font-size: 10px; }
+  /* Design */ }
+  .Equipo * {
+    box-sizing: border-box; }
+    .Equipo *::before, .Equipo *::after {
+      box-sizing: border-box; }
+  .Equipo html {
+    background-color: #ecf9ff; }
+  .Equipo body {
+    color: #272727;
+    font-family: 'Aleo', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    padding: 1rem; }
+  .Equipo .main {
+    max-width: 1200px;
+    margin: 0 auto; }
+  .Equipo h1 {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center; }
+  .Equipo img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle; }
+  .Equipo .cards {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  .Equipo .cards_item {
+    display: flex;
+    padding: 1rem; }
+  @media (min-width: 40rem) {
+    .Equipo .cards_item {
+      width: 50%; } }
+  @media (min-width: 56rem) {
+    .Equipo .cards_item {
+      width: 33.3333%; } }
+  .Equipo .card {
+    background-color: white;
+    border-radius: 0.25rem;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; }
+  .Equipo .card_content {
+    padding: 1rem;
+    background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%); }
+  .Equipo .card_title {
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin: 0px;
+    padding-bottom: 1rem; }
+  .Equipo .card_text {
+    color: #ffffff;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+    font-weight: 400;
+    height: 2rem; }
 
 /* --------------------------------- Contacto ---------------------------------*/
 .formularioContacto {
