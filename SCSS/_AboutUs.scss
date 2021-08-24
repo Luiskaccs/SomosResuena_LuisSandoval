@@ -114,7 +114,8 @@
   
   /* ---------------------------------Equipos---------------------------------*/
 
-  
+  /* 
+
   .Equipo {
     display: grid;
     background: rgb(36, 39, 69);
@@ -214,8 +215,6 @@
       display: inline-block;
       background: rgb(36, 39, 69);
       background: linear-gradient(166deg, rgba(36, 39, 69, 1) 0%, rgba(205, 104, 79, 1) 100%);
-      /* width: 15rem;
-      height: 30rem; */
       border-style: solid;
       border-width: 0.2rem;
       text-align: justify;
@@ -231,4 +230,112 @@
       height: 20rem;
       font-size: 10px;
     }
+  } */
+
+
+  .Equipo {
+    width:100vw ;
+    background: rgb(36, 39, 69);
+    background: linear-gradient(166deg, rgba(36, 39, 69, 1) 0%, rgba(205, 104, 79, 1) 100%);
+
+  @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+
+/* Design */
+
+* {
+  box-sizing: border-box;
+
+  &::before, &::after {
+    box-sizing: border-box;
+  }
+}
+
+html {
+  background-color: #ecf9ff;
+}
+
+body {
+  color: #272727;
+  font-family: 'Aleo', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 1rem;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card_content {
+  padding: 1rem;
+  background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
+}
+
+.card_title {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+  padding-bottom: 1rem;
+}
+
+.card_text {
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+  font-weight: 400;
+  height: 2rem;
+}
   }
