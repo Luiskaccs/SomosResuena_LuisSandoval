@@ -447,10 +447,12 @@ header {
     overflow: hidden; }
   .Equipo .card_content {
     padding: 1rem;
-    background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%); }
+    background: #211f43;
+    background: linear-gradient(129deg, #211f43 0%, #ff9175 100%);
+    height: 12rem; }
   .Equipo .card_title {
     color: #ffffff;
-    font-size: 1.1rem;
+    font-size: 2rem;
     font-weight: 700;
     letter-spacing: 1px;
     text-transform: capitalize;
@@ -458,11 +460,10 @@ header {
     padding-bottom: 1rem; }
   .Equipo .card_text {
     color: #ffffff;
-    font-size: 0.875rem;
+    font-size: 1.2rem;
     line-height: 1.5;
     margin-bottom: 1.25rem;
-    font-weight: 400;
-    height: 2rem; }
+    font-weight: 400; }
 
 /* --------------------------------- Contacto ---------------------------------*/
 .formularioContacto {
