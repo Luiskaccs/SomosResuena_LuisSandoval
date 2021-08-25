@@ -7,7 +7,7 @@
     
     @media (min-width: 0px) and (max-width:$sm){
 
-      width: 100vw;
+      max-width: 100%;
       height: 80rem;
       grid-template-areas: "Titulo" "SPOTY2" "SCLD";
       grid-template-columns: 100%;
@@ -22,7 +22,7 @@
           
     @media (min-width: $sm) and (max-width:$md){
 
-      width: 100vw;
+      max-width: 100%;
       height: 80rem;
       grid-template-areas: "Titulo" "SPOTY2" "SCLD";
       grid-template-columns: 100%;
@@ -37,7 +37,7 @@
         
     @media (min-width: $md) and (max-width:$lg){
 
-        width: 100vw;
+        max-width: 100%;
         height: 80rem;
         grid-template-areas: "Titulo" "SPOTY2" "SCLD";
         grid-template-columns: 100%;

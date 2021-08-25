@@ -8,12 +8,13 @@
     background: linear-gradient(6deg, rgba(36, 39, 69, 1) 0%, rgba(205, 104, 79, 1) 100%);
     text-align: justify;
     font-family: 'Aleo', sans-serif;
+    max-width: 100%;
 
     @media (min-width: 0px) and (max-width:$sm)  {
 
 
     height: 30rem;
-    width: 100vw;
+    max-width: 100%;
     grid-template-areas: "Titulo" "Foto1" "Texto1";
     grid-template-columns: 100%;
     grid-template-rows: 20% 40% 30%;
@@ -39,7 +40,7 @@
     @media (min-width: $sm) and (max-width:$md)  {
   
       height: 40rem;
-      width: 100vw;
+      max-width: 100%;
       grid-template-areas: 
       "Titulo" 
       "Foto1" 
@@ -67,9 +68,9 @@
     @media (min-width: $md) and (max-width:$lg)  {
 
         height: 40rem;
-        width: 100vw;
+        max-width: 100%;
         grid-template-areas: "Titulo Titulo" "Texto1 Foto1";
-        grid-template-columns: 40% 60%;
+        grid-template-columns: 40% 59%;
         grid-template-rows: 20% 70%;
         gap: 1rem;
     
@@ -89,6 +90,7 @@
   
     .Titulo {
       grid-area: Titulo;
+      
     }
 
     .Texto1 {
@@ -96,16 +98,12 @@
       justify-self: center;
       align-self: center;
       color: white;
-      /* height: 20rem;
-      width: 25rem; */
     }
     
     .Foto1 {
       grid-area: Foto1;
       justify-self: center;
       align-self: center;
-      /* width: 70%;
-      height: auto; */
       border-radius: 50px;
     }
 
@@ -116,11 +114,10 @@
 
 
   .Equipo {
-    width:100vw ;
+    max-width: 100%;
     background: rgb(36, 39, 69);
     background: linear-gradient(166deg, rgba(36, 39, 69, 1) 0%, rgba(205, 104, 79, 1) 100%);
 
-  @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
 
 /* Design */
 
@@ -158,7 +155,7 @@ h1 {
 
 img {
   height: auto;
-  max-width: 100%;
+  width: 100%;
   vertical-align: middle;
 }
 

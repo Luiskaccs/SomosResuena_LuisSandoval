@@ -11,6 +11,8 @@ header {
     background-size: cover;
     font-family: 'Aleo', sans-serif;
     color: #fff;
+    max-width: 100%;
+
 
     @media (min-width: 0px) and (max-width:$sm)  {
       height: 70rem;
@@ -38,7 +40,7 @@ header {
 
     @media (min-width: $sm) and (max-width:$md)  {
       height: 70rem;
-      width: 100vw;
+      max-width: 100%;
       background-position: center;
       grid-template-areas: 
       "Logo"
@@ -58,7 +60,7 @@ header {
     @media (min-width: $md) and (max-width:$lg) {
       border-radius: 0px;
       height: 60rem;
-    width: 100vw;
+      max-width: 100%;
     background-position: center;
     grid-template-areas: "Logo Menu" "Presentacion VideoReel" "Presentacion VideoReel" "Boton1Header VideoReel";
     grid-template-columns: 40% 60%;
@@ -312,7 +314,7 @@ header {
 
     @media (min-width: 0px) and (max-width:$sm)  {
     height: 9rem;
-    width: 100vw;
+    max-width: 100%;
     grid-template-areas: 
     "Logo"
     "menuHambur";
@@ -327,7 +329,7 @@ header {
 
     @media (min-width: $sm) and (max-width:$md)  {
       height: 15rem;
-      width: 100vw;
+      max-width: 100%;
       grid-template-areas: 
       "Logo"
       "Menu";
@@ -342,7 +344,7 @@ header {
 
       @media (min-width: $md) and (max-width:$lg)  {
         height: 10rem;
-        width: 100vw;
+        max-width: 100%;
         grid-template-areas: 
         "Logo Menu";
         grid-template-columns: 20% 80%;

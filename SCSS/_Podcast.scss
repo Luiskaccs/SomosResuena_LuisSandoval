@@ -8,14 +8,9 @@
 
     @media (min-width: 0px) and (max-width:$sm){
 
-    /* height: 70rem;
-    width: 100vw;
-    grid-template-areas: "Titulo Titulo" "SPOTY Foto2 " "Foto3 YTB";
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 10% 40% 40%; */
 
     height: 90rem;
-    width: 100vw;
+    max-width: 100%;
     grid-template-areas: "Titulo" "SPOTY" "Foto2 " "YTB" "Foto3" ;
     grid-template-columns: 100%;
     grid-template-rows: 10% 20% 20% 20% 20%;
@@ -39,14 +34,9 @@
 
     @media (min-width: $sm) and (max-width:$md){
 
-      /* height: 70rem;
-      width: 100vw;
-      grid-template-areas: "Titulo Titulo" "SPOTY Foto2 " "Foto3 YTB";
-      grid-template-columns: 50% 50%;
-      grid-template-rows: 10% 40% 40%; */
   
       height: 160rem;
-      width: 100vw;
+      max-width: 100%;
       grid-template-areas: "Titulo" "SPOTY" "Foto2 " "YTB" "Foto3" ;
       grid-template-columns: 100%;
       grid-template-rows: 10% 20% 20% 30% 20%;
@@ -71,7 +61,7 @@
       @media (min-width: $md) and (max-width:$lg){
 
         height: 100rem;
-        width: 100vw;
+        max-width: 100%;
         grid-template-areas: "Titulo Titulo" "SPOTY Foto2 " "Foto3 YTB";
         grid-template-columns: 50% 50%;
         grid-template-rows: 10% 40% 40%;
